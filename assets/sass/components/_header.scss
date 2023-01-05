@@ -1,0 +1,53 @@
+//header
+.header{
+    width: 100%;
+    background-color:$navColor;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    transition: all .5s;
+}
+
+//nav
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    &_menu{
+        @media screen and (max-width:767px) {
+            position: fixed;
+            padding: 2.5rem 0;
+            background-color: $light;
+            box-shadow:0 0 04px rgba(0,0,0,.1);
+            width: 90%;
+            top:-100%;
+            left: 0;
+            margin: 2rem;
+            transition: all .4s;
+            border-radius: .4rem;
+            z-index: -1;
+        }
+    }
+    &_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+    }
+    &_link,&_logo,&_toggle{
+        color: $mainColor;
+        font-weight: 400;
+    }
+    &_toggle{
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+
+//show menu 
+
+.show-menu{
+    top:3rem;
+}

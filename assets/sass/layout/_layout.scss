@@ -1,0 +1,32 @@
+.section{
+    padding: 4rem 0 1rem;
+    &_title,&_titleCenter{
+        text-align: center;
+        margin-bottom: .75rem   ;
+    }
+}
+
+.svg{
+    &_color{
+        fill:$svgColor
+    }
+    &_blob{
+        fill:$light
+    }
+    &_img{
+        max-width: 300px;
+        justify-self: center;
+    }
+}
+
+// layout
+.container{
+    max-width: 968px;
+    margin: 0 auto;
+    
+}
+
+.grid{
+    display: grid;
+    gap:1rem;
+}

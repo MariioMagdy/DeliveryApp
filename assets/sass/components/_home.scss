@@ -1,0 +1,15 @@
+// home--------------------->
+.home{
+    &_container{
+        row-gap: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &_title{
+        font-size:$biggestFont;
+        padding-bottom: .75rem;
+    }
+    &_desc{
+        padding-bottom:.75rem;
+    }
+}

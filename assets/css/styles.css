@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: #F0EAD8;
+  color: #FF7F75;
+  transition: all 0.5;
+}
+
+h1, h2, h3 {
+  color: #021E66;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 4rem 0 1rem;
+}
+.section_title, .section_titleCenter {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.svg_color {
+  fill: #F73668;
+}
+.svg_blob {
+  fill: #F76E7C;
+}
+.svg_img {
+  max-width: 300px;
+  justify-self: center;
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.about_container {
+  gap: 2.5rem;
+}
+.about_data {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #F76E7C;
+  color: #1A1A1A;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: #ff596a;
+}
+.button_header {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: fixed;
+    padding: 2.5rem 0;
+    background-color: #F76E7C;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    top: -100%;
+    left: 0;
+    margin: 2rem;
+    transition: all 0.4s;
+    border-radius: 0.4rem;
+    z-index: -1;
+  }
+}
+.nav_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+.nav_link, .nav_logo, .nav_toggle {
+  color: #F0EAD8;
+  font-weight: 400;
+}
+.nav_toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.show-menu {
+  top: 3rem;
+}
+
+.home_container {
+  row-gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.home_title {
+  font-size: 2.5rem;
+  padding-bottom: 0.75rem;
+}
+.home_desc {
+  padding-bottom: 0.75rem;
+}
+
+.security_container {
+  gap: 2rem;
+}
+.security_description {
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
